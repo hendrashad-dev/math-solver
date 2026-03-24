@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+h1 {
+    color: #1025e3;
+}
+
+#mahtInput {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+button {
+    background-color: green;
+    color: #eee;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
