@@ -9,12 +9,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #F0F8FF;
 }
 
 .box {
-    background-color: #fff;
+    background-color: #87CEFA;
     padding: 30px;
     border-radius: 20px;
+    width: 350px;
 
 }
 
@@ -45,4 +47,30 @@ button {
     margin-top: 20px;
     font-size: 24px;
     color: #333;
+}
+
+.history-section {
+    margin-top: 25px;
+    text-align: left;
+    border-top: 1px solid #ffffffab;
+    padding-top: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #011795;
+    margin: 0 0 10px 0;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+#historyList li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #ffffff97;
 }
