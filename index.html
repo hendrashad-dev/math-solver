@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Solver</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="box">
-        <h1>Math Solver</h1>
-        <p>Writea question like 2+2 or 6/3</p>
-
-        <input type="text" id="mahtInput" placeholder="Write here...">
-        <br>
-
-        <button id="solveButton">Solve</button>
-        <div id="resultBox">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.2.1/math.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="box main-container">
+        <button id="hb" class="btn hBtn">History</button>
+        <h1 class="title">Math Solver</h1>
+        <div class="lines"></div>
+        <div class="input-section top">
+          <p class="dialogue-text">Write your equation here:</p>
+          <div class="input-wrapper">
+            <input type="text" id="eq" class="input" placeholder="e.g. 2x^2 + 5x - 3 = 0" autocomplete="off" />
+            <span class="chalk-line"></span>
+          </div>
+          <button id="sb" class="btn">Solve</button>
+        </div>
+        <div id="res" class="output display-none top">
+          <h2 class="heading">Solution steps:</h2>
+          <div id="sl" class="list"></div>
         </div>
 
-        <div class="history-section">
-            <h3>Previous Solves:</h3>
-            <ul id="historyList">
-
-            </ul>
+        <div id="hp" class="hPanel display-none top">
+          <div class="hHead">
+            <h2 class="heading" style="margin: 0;">Equation History</h2>
+            <button id="cb" class="btn sBtn">Close</button>
+          </div>
+          <div id="hl" class="hList"></div>
         </div>
 
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
